@@ -1,9 +1,5 @@
 # Pre-work - *Tippor*
 
-> HINT: Please
-> - include this README.md in your project and fill out the information. 
-> - remove all the HINT blocks in this file.
-
 **Tippor** is a tip calculator application for iOS.
 
 Submitted by: **Tri Ngo Minh**
@@ -11,8 +7,6 @@ Submitted by: **Tri Ngo Minh**
 Time spent: **5** hours spent in total
 
 ## User Stories
-
-> HINT: mark the items you completed with [x]
 
 The following **required** functionality is complete:
 
@@ -30,12 +24,6 @@ The following **additional** features are implemented:
 - [x] Also remembering the tip percentage across app restarts.
 
 ## Video Walkthrough 
-
-> HINT: You can put a `walkthrough.gif` file in your project folder, add to git, and use the following syntax to embed it: 
- 
-> `![Video Walkthrough](walkthrough.gif)` 
- 
-> You can also upload your image to imgur.com and embed the link here.
 
 Here's a walkthrough of implemented user stories:
 
