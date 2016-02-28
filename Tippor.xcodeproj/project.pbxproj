@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EB3461471C6458800030CCB3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3461461C6458800030CCB3 /* SettingsViewController.swift */; };
+		EBB337D91C830A1500B48B27 /* CustomUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB337D81C830A1500B48B27 /* CustomUITextField.swift */; };
 		EBC058B71C736F81002F6483 /* man.png in Resources */ = {isa = PBXBuildFile; fileRef = EBC058B61C736F81002F6483 /* man.png */; };
 		EBF2EDCC1C64517A0042F548 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF2EDCB1C64517A0042F548 /* AppDelegate.swift */; };
 		EBF2EDCE1C64517A0042F548 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF2EDCD1C64517A0042F548 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		EB3461461C6458800030CCB3 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		EBB337D81C830A1500B48B27 /* CustomUITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUITextField.swift; sourceTree = "<group>"; };
 		EBC058B61C736F81002F6483 /* man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man.png; sourceTree = "<group>"; };
 		EBF2EDC81C64517A0042F548 /* Tippor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tippor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF2EDCB1C64517A0042F548 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				EBF2EDCD1C64517A0042F548 /* ViewController.swift */,
 				EBF2EDCF1C64517A0042F548 /* Main.storyboard */,
 				EB3461461C6458800030CCB3 /* SettingsViewController.swift */,
+				EBB337D81C830A1500B48B27 /* CustomUITextField.swift */,
 			);
 			path = Tip;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBB337D91C830A1500B48B27 /* CustomUITextField.swift in Sources */,
 				EBF2EDCE1C64517A0042F548 /* ViewController.swift in Sources */,
 				EBF2EDCC1C64517A0042F548 /* AppDelegate.swift in Sources */,
 				EB3461471C6458800030CCB3 /* SettingsViewController.swift in Sources */,

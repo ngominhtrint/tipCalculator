@@ -8,9 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet weak var billAmountField: UITextField!
+    @IBOutlet weak var billAmountField: CustomUITextField!
     @IBOutlet weak var tipControl: UISegmentedControl!
     
     @IBOutlet weak var tipLabel: UILabel!
@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var threeManShare: UILabel!
     @IBOutlet weak var fourManShare: UILabel!
     
+    var currentString = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -26,6 +28,8 @@ class ViewController: UIViewController {
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
         
+        billAmountField.delegate = self
+        billAmountField.becomeFirstResponder()
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -56,11 +60,11 @@ class ViewController: UIViewController {
         let tip = billAmount * tipPercentage
         let total = billAmount + tip
         
-        tipLabel.text = String(format: "$%.2f", tip)
-        totalLabel.text = String(format: "$%.2f", total)
-        twoManShare.text = String(format: "$%.2f", total/2)
-        threeManShare.text = String(format: "$%.2f", total/3)
-        fourManShare.text = String(format: "$%.2f", total/4)
+        tipLabel.text = formatter(tip)
+        totalLabel.text = formatter(total)
+        twoManShare.text = formatter(total/2)
+        threeManShare.text = formatter(total/3)
+        fourManShare.text = formatter(total/4)
     }
 
     func onLoadSettingInfos(){
@@ -69,5 +73,14 @@ class ViewController: UIViewController {
         tipControl.selectedSegmentIndex = tipPercentageFromSetting
     }
     
+    func formatter(value: Double) ->String{
+        let numberFormatter = NSNumberFormatter()
+        numberFormatter.usesGroupingSeparator = true
+        numberFormatter.numberStyle = NSNumberFormatterStyle.CurrencyStyle
+        
+        return numberFormatter.stringFromNumber(value)!
+    }
+
+        
 }
 
