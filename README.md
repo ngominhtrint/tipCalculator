@@ -23,11 +23,21 @@ The following **additional** features are implemented:
 
 - [x] Also remembering the tip percentage across app restarts.
 
+The following features are implemented for **CoderSchool Select**
+
+- [x] Auto layout for all screen.
+- [x] Add game screen for lucky tip money.
+- [x] Game screen with spin view. It spin random to get tip rate.
+
+
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
 ![walkthrough.gif](walkthrough.gif)
+
+**CoderSchool Select version**
+<img src='http://i.imgur.com/nZUDTxI.gifv' title='Tutorials' width='' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
