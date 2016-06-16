@@ -37,7 +37,8 @@ Here's a walkthrough of implemented user stories:
 ![walkthrough.gif](walkthrough.gif)
 
 **CoderSchool Select version**
-<img src='http://i.imgur.com/nZUDTxI.gifv' title='Tutorials' width='' />
+
+<img src='http://i.imgur.com/nZUDTxI.gif' title='Game' width='' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
