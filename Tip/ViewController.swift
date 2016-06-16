@@ -20,6 +20,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var fourManShare: UILabel!
     
     var currentString = ""
+    var billAmount: Double!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +57,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         var tipPercentages = [0.1, 0.15, 0.2]
         let tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
         
-        let billAmount = NSString(string: billAmountField.text!).doubleValue
+        billAmount = NSString(string: billAmountField.text!).doubleValue
         let tip = billAmount * tipPercentage
         let total = billAmount + tip
         
@@ -81,6 +82,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return numberFormatter.stringFromNumber(value)!
     }
 
+    
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
         
+        if (segue.identifier == "segueGame") {
+            let gvc = segue.destinationViewController as! GameViewController
+            gvc.bill = billAmount
+        }
+     }
+ 
 }
 
